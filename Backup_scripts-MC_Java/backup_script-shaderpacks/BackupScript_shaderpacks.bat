@@ -11,5 +11,5 @@ set "currentDate=!day!-!month!-!year!_!hour!-!minute!-!second!"
 set "source=%USERPROFILE%\AppData\Roaming\.minecraft\shaderpacks"
 set "destination=%~dp0"
 set "folderName=shaderpacks_!currentDate!"
-xcopy "%source%" "%destination%!folderName!" /e /i /y /h
+xcopy "%source%" "%destination%!folderName!" /e /i /y /h /g
 if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a "%destination%!folderName!.7z" "%destination%!folderName!\*")
