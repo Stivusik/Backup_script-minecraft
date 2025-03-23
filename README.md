@@ -1,6 +1,6 @@
 EN:
 Warning for bedrock players:
-Unarchive backup script to main disk directory to not target any problems
+Unarchive backup script to main disk directory to not target any problems.
 Warning for Java players: Script works only with AppData\Roaming\.minecraft, doesn't work with other paths
 7z.exe was got from https://github.com/ip7z/7zip
 
