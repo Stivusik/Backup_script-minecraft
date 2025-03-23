@@ -11,5 +11,5 @@ set "currentDate=!day!-!month!-!year!_!hour!-!minute!-!second!"
 set "source=%USERPROFILE%\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe"
 set "destination=%~dp0"
 set "folderName=Microsoft.MinecraftUWP_!currentDate!"
-xcopy "%source%" "%destination%!folderName!" /e /i /y /h
+xcopy "%source%" "%destination%!folderName!" /e /i /y /h /g
 if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a -tzip "%destination%!folderName!.zip" "%destination%!folderName!\*")
