@@ -12,4 +12,4 @@ set "source=%USERPROFILE%\AppData\Local\Packages\Microsoft.MinecraftWindowsBeta_
 set "destination=%~dp0"
 set "folderName=Microsoft.MinecraftWindowsBeta_!currentDate!"
 xcopy "%source%" "%destination%!folderName!" /e /i /y /h /g
-if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a "%destination%!folderName!.7z" "%destination%!folderName!\*")
+if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a -tzip "%destination%!folderName!.zip" "%destination%!folderName!\*")
