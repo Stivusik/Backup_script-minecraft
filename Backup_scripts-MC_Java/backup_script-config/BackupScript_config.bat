@@ -12,4 +12,4 @@ set "source=%USERPROFILE%\AppData\Roaming\.minecraft\config"
 set "destination=%~dp0"
 set "folderName=config_!currentDate!"
 xcopy "%source%" "%destination%!folderName!" /e /i /y /h /g
-if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a "%destination%!folderName!.7z" "%destination%!folderName!\*")
+if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a -tzip "%destination%!folderName!.zip" "%destination%!folderName!\*")
