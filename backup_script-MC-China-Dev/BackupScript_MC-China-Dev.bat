@@ -12,4 +12,4 @@ set "source=%USERPROFILE%\AppData\Roaming\MinecraftPE_Netease"
 set "destination=%~dp0"
 set "folderName=MinecraftPE_Netease_!currentDate!"
 xcopy "%source%" "%destination%!folderName!" /e /i /y /h /g
-if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a "%destination%!folderName!.7z" "%destination%!folderName!\*")
+if exist "%~dp0\7z.exe" ("%~dp0\7z.exe" a -tzip "%destination%!folderName!.zip" "%destination%!folderName!\*")
